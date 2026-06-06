@@ -91,8 +91,7 @@ def listar_agendamentos():
     conn = conectar()
     cursor = conn.cursor()
     
-    # Esse comando SQL (JOIN) junta a tabela de agendamentos com a de pets 
-    # para trazer o nome do pet em vez de só mostrar o número do ID!
+   
     cursor.execute("""
     SELECT agendamentos.id, pets.nome, agendamentos.servico, agendamentos.data_hora
     FROM agendamentos
