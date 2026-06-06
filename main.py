@@ -83,7 +83,6 @@ def menu():
                 print("Nenhum serviço agendado para os próximos dias.")
             else:
                 for agendamento in agenda:
-                    # agendamento[0] = ID, agendamento[1] = Nome do Pet, agendamento[2] = Serviço, agendamento[3] = Data/Hora
                     print(f"Agendamento Nº: {agendamento[0]} | Pet: {agendamento[1]} | Serviço: {agendamento[2]} | Horário: {agendamento[3]}")
 
         elif opcao == "7":
